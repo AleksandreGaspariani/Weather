@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+
+    <!-- Jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Bootstrap js cdn -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <div class="w-100 bg-dark d-flex justify-content-around align-items-center" id="container">
+        <div class="today bg-white rounded" style="height: auto; width: auto;">
+            <div style="min-height: 160px; width: inherit;" class="bg-info rounded">
+                <div class="d-flex justify-content-center align-items-center" style="width: inherit;">
+                    <p id="todayWeatherCity"></p>
+                    <p id="todayDay">Today</p>
+                    <p id="todayDate"></p>
+                </div>
+                <div style="width: inherit;" class="d-flex justify-content-center align-items-center">
+                    <img id="todayWeatherImg" src="" alt="">
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <p id="todayWeatherText"></p>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <p id="todayWeatherTemp"></p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center flex-column" style="height: 240px;">
+                <p id="todayWeatherWind"></p>
+                <p id="todayWeatherMaxWind"></p>
+                <div class="d-flex">
+                    <p id="todayWeatherMaxTemp"></p>
+                    <p id="todayWeatherMinTemp"></p>
+                </div>
+                <p id="todayWeatherHumidity"></p>
+                <p id="todayWeatherChancerain"></p>
+            </div>
+        </div>
+        <div class="tomarrow bg-white rounded" style="height: auto; width: auto;">
+            <div style="min-height: 160px; width: inherit;" class="bg-info rounded">
+                <div class="d-flex justify-content-center align-items-center" style="width: inherit;">
+                    <p id="tomarrowWeatherCity"></p>
+                    <p id="tomarrowDay">Tomarrow</p>
+                    <p id="tomarrowDate"></p>
+                </div>
+                <div style="width: inherit;" class="d-flex justify-content-center align-items-center">
+                    <img id="tomarrowWeatherImg" src="" alt="">
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <p id="tomarrowWeatherText"></p>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <p id="tomarrowWeatherTemp"></p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center flex-column" style="height: 240px;">
+                <p id="tomarrowWeatherWind"></p>
+                <p id="tomarrowWeatherMaxWind"></p>
+                <div class="d-flex">
+                    <p id="tomarrowWeatherMaxTemp"></p>
+                    <p id="tomarrowWeatherMinTemp"></p>
+                </div>
+                <p id="tomarrowWeatherHumidity"></p>
+                <p id="tomarrowWeatherChancerain"></p>
+            </div>
+        </div>
+        <div class="afterTomarrow bg-white rounded" style="height: auto; width: auto;">
+            <div style="min-height: 160px; width: inherit;" class="bg-info rounded">
+                <div class="d-flex justify-content-center align-items-center" style="width: inherit;">
+                    <p id="afterTomarrowWeatherCity"></p>
+                    <p id="afterTomarrowDay">The day after tomarrow</p>
+                    <p id="afterTomarrowDate"></p>
+                </div>
+                <div style="width: inherit;" class="d-flex justify-content-center align-items-center">
+                    <img id="afterTomarrowWeatherImg" src="" alt="">
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <p id="afterTomarrowWeatherText"></p>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <p id="afterTomarrowWeatherTemp"></p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center flex-column" style="height: 240px;">
+                <p id="afterTomarrowWeatherWind"></p>
+                <p id="afterTomarrowWeatherMaxWind"></p>
+                <div class="d-flex">
+                    <p id="afterTomarrowWeatherMaxTemp"></p>
+                    <p id="afterTomarrowWeatherMinTemp"></p>
+                </div>
+                <p id="afterTomarrowWeatherHumidity"></p>
+                <p id="afterTomarrowWeatherChancerain"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    min-height: 100vh;
+}
+
+.tomarrow {
+    margin: 1rem;
+}
+
+.today,.tomarrow,.afterTomarrow {
+    padding: 5px 5px;
+}
+
+/* Media query for phones */
+@media (max-width: 480px) {
+    #container {
+        width: 100%;
+        flex-direction: column !important;
+    }
+}
