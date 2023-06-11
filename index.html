@@ -15,14 +15,24 @@
     <!-- Bootstrap js cdn -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+
     <!-- Custom css -->
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-    
-    <div class="w-100 bg-dark d-flex justify-content-around align-items-center" id="container">
-        <div class="today bg-white rounded" style="height: auto; width: auto;">
+
+    <div class="w-100 d-flex justify-content-around align-items-center position-relative" id="container">
+
+        <form class="position-absolute d-flex" style="top: 2rem" id="getWeather">
+            <input type="text" class="" placeholder="Search" style="width: 500px;" id="youtField">
+            <button class="" type="submit" id="youtButton"><i class="bi bi-search"></i></button>
+        </form> 
+
+        <div class="today bg-white rounded" style="height: auto; min-width: 250px;">
             <div style="min-height: 160px; width: inherit;" class="bg-info rounded">
                 <div class="d-flex justify-content-center align-items-center" style="width: inherit;">
                     <p id="todayWeatherCity"></p>
@@ -50,7 +60,7 @@
                 <p id="todayWeatherChancerain"></p>
             </div>
         </div>
-        <div class="tomarrow bg-white rounded" style="height: auto; width: auto;">
+        <div class="tomarrow bg-white rounded" style="height: auto; min-width: 250px;">
             <div style="min-height: 160px; width: inherit;" class="bg-info rounded">
                 <div class="d-flex justify-content-center align-items-center" style="width: inherit;">
                     <p id="tomarrowWeatherCity"></p>
@@ -78,7 +88,7 @@
                 <p id="tomarrowWeatherChancerain"></p>
             </div>
         </div>
-        <div class="afterTomarrow bg-white rounded" style="height: auto; width: auto;">
+        <div class="afterTomarrow bg-white rounded" style="height: auto; min-width: 250px;">
             <div style="min-height: 160px; width: inherit;" class="bg-info rounded">
                 <div class="d-flex justify-content-center align-items-center" style="width: inherit;">
                     <p id="afterTomarrowWeatherCity"></p>
