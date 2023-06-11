@@ -1,7 +1,7 @@
 
 $(document).ready(()=>{
     
-    function getWeather (){
+    function getWeather (city){
         // ajax setup
         $.ajaxSetup({
             headers: {
@@ -18,7 +18,7 @@ $(document).ready(()=>{
                 'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
             },
             data: {
-                q: 'Tbilisi',
+                q: city,
                 days: '3'
             }
         }).done((response)=>{
@@ -44,10 +44,16 @@ $(document).ready(()=>{
                 $('#'+days[i]+'WeatherMaxTemp').html('Temp Max '+response['forecast']['forecastday'][i]['day']['maxtemp_c']+'°C');
             }
         }).fail((error)=>{
-            console.log(error)
+            $('#youtField').val('City not found!');
         })
     }
 
-    getWeather();
+    $('#getWeather').on('submit',(e)=>{
+        e.preventDefault();
+        let city = $('#youtField').val();
+        getWeather(city);
+    });
+
+    // getWeather();
 
 })
